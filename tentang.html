@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tentang Saya - Syifa Fauziah Sarfina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #3e2f1c;
+      background: linear-gradient(to bottom right, #5a3921 0%, #d2b48c 100%);
+      background-attachment: fixed;
+      background-size: cover;
+      animation: fadeInBody 1.5s ease;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      background-color: rgba(255, 250, 240, 0.95);
+      max-width: 850px;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      animation: bounceIn 1s ease;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      color: #4b2e15;
+      font-size: 42px;
+      margin-bottom: 30px;
+      animation: floatText 3s ease-in-out infinite;
+    }
+
+    h2 {
+      color: #5a3c2b;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #4a3b2c;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    p:hover {
+      transform: scale(1.02);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      background-color: #5a3c2b;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #ffb47d;
+      color: #3e2a1c;
+      transform: translateY(-2px);
+    }
+
+    /* Animasi */
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-10px);
+      }
+      100% {
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes floatText {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <h1>Tentang Saya</h1>
+
+      <p>Halo! Nama saya <strong>Syifa Fauziah Sarfina</strong>. Saya lahir di Jakarta pada tanggal <strong>19 Agustus 2005</strong>. Saat ini saya mahasiswa <strong>Sistem Informasi</strong> di semester <strong>2</strong>.</p>
+
+      <p>Saya sangat tertarik dengan dunia teknologi, terutama dalam bidang <strong>desain grafis</strong>, <strong>pengembangan web</strong>, dan <strong>penulisan konten</strong>. Saya percaya bahwa kombinasi antara kreativitas dan teknologi dapat menghasilkan karya yang bermanfaat bagi banyak orang.</p>
+
+      <p>Saya juga suka menghabiskan waktu dengan <strong>membaca buku</strong>, <strong>menulis artikel</strong>, dan <strong>mendesain menggunakan Canva</strong>. Belajar hal baru seperti HTML, CSS, dan cara membuat website interaktif adalah salah satu hal yang paling saya nikmati.</p>
+
+      <h2>Visi dan Tujuan</h2>
+      <p>Tujuan saya adalah untuk terus mengembangkan kemampuan di bidang teknologi informasi dan suatu saat nanti membangun platform digital yang berguna untuk pendidikan atau komunitas. Saya ingin memberikan kontribusi nyata dalam dunia digital yang berkembang pesat ini.</p>
+
+      <a href="index.html" class="back-link"> Kembali ke Beranda</a>
+    </div>
+  </div>
+
+</body>
+</html>
